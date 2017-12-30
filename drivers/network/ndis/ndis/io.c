@@ -416,7 +416,7 @@ NdisMAllocateMapRegisters(
 
       NDIS_DbgPrint(MAX_TRACE, ("resetting event\n"));
 
-      KeClearEvent(&AllocationEvent);
+      KeResetEvent(&AllocationEvent);
     }
 
   NDIS_DbgPrint(MAX_TRACE, ("returning success\n"));
